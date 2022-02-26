@@ -1,11 +1,21 @@
-function double(number) {
-  return number *2;
+function halve(number) {
+  return number / 2;
 }
 
-var result = double(3);
+// solution1
+let result = halve(12);
 
 console.log(result);
 
-var result = double(6);
+result = halve(10);
 
 console.log(result);
+
+// solution2
+const outPutFromHalf12 = halve(12);
+
+console.log(outPutFromHalf12);
+
+const outPutFromHalf10 = halve(10);
+
+console.log(outPutFromHalf10);

@@ -1,14 +1,8 @@
-
-
 function createGreeting (name) {
-    const message = "Hello, my name is " + name;
-    return message;
+    return `Hello, my name is ${name}`;
 }
 
-var greeting = createGreeting("Burçak");
+const greeting = createGreeting("Burçak");
 
 console.log(greeting);
 
-
-
-/* Hello, my name is Burçak */
