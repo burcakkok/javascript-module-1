@@ -6,9 +6,5 @@
 
 */
 
-// let n = 10;
-// function sumTillNum(num) {
-//     return n * (n+1) / 2;
-// } while (n<=10)
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
