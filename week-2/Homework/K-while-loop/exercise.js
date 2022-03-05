@@ -25,5 +25,5 @@ let n = 10;
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
 
 if (sumTillNum(n) === (n * (n+1) / 2)) {
-    console.log("You saved 💅")
+    console.log("You saved 👸")
 }

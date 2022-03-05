@@ -16,7 +16,7 @@ var enoughSpaceInRoom = studentCount + mentorCount <= roomMaxCapacity;
 
 var personA = "Daniel";
 var personB = "Irina";
-var sameName = personA == personB; 
+var sameName = personA === personB; 
 
 /* 
   DO NOT EDIT BELOW THIS LINE
