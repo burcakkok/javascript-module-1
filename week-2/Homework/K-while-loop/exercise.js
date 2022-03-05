@@ -6,5 +6,24 @@
 
 */
 
+function sumTillNum(num) {
+    if (num < 0) {
+        throw Error("Hey, you're supposed to pass in a positive number!")
+    }
+
+    let i = num
+    let sumResult = 0
+    while (i > 0) {
+        sumResult = sumResult + i;
+        i = i - 1;
+    } 
+    return sumResult;
+}
+
+let n = 10;
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
+
+if (sumTillNum(n) === (n * (n+1) / 2)) {
+    console.log("You saved 💅")
+}

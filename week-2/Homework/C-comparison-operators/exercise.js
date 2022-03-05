@@ -11,7 +11,8 @@ var moreStudentsThanMentors = studentCount > mentorCount;
 
 
 var roomMaxCapacity = 25;
-var enoughSpaceInRoom = studentCount + mentorCount <= 25; 
+var enoughSpaceInRoom = studentCount + mentorCount <= roomMaxCapacity; 
+
 
 var personA = "Daniel";
 var personB = "Irina";

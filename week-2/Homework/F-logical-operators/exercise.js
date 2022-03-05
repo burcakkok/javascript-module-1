@@ -21,8 +21,8 @@ var cssLevelAbove5 = cssLevel > 5;
 // Do not "hardcode" the answers
 var cssAndHtmlAbove5;
 var cssOrHtmlAbove5;
-var cssAndHtmlAbove5 = htmlLevel > 5 && cssLevel > 5;
-var cssOrHtmlAbove5 = htmlLevel > 5 || cssLevel > 5;
+var cssAndHtmlAbove5 = htmlLevelAbove5 && cssLevelAbove5;
+var cssOrHtmlAbove5 = htmlLevelAbove5 || cssLevelAbove5;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
