@@ -7,8 +7,23 @@
   Tip: use the string method .split() and the array method .join()
 */
 
-function capitalise(str) {}
+function capitalise(str) {
+  let wordsArray = str.toLowerCase().split(' ')
+  let capsArray = []
+  
+  wordsArray.forEach(word => {
+      capsArray.push(word[0].toUpperCase() + word.slice(1))
+  });
+  
+  return capsArray.join(' ')
+}
 
+// function capitalise(str) {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// }
+
+// const caps = str.split(' ').map(capitalize).join(' ');
+// caps;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
