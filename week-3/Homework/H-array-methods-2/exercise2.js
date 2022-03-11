@@ -8,24 +8,16 @@
 */
 
 function capitalise(str) {
-  let wordsArray = str.toLowerCase().split(' ')
-  let capsArray = []
-  
-  wordsArray.forEach(word => {
-      capsArray.push(word[0].toUpperCase() + word.slice(1))
-  });
-  
-  return capsArray.join(' ')
+  const lowerCaseStr = str.toLowerCase();
+  const myNameArray = lowerCaseStr.split('');
+  const firstLetter = myNameArray[0];
+  const restOfTheStringArray = myNameArray.slice(1);
+  const capitalizedFirstLetter = firstLetter.toUpperCase();
+  const capitalizedStringArray = [capitalizedFirstLetter, ...restOfTheStringArray];
+  return capitalizedStringArray.join('');
 }
 
-// function capitalise(str) {
-//   return str.charAt(0).toUpperCase() + str.slice(1);
-// }
-
-// const caps = str.split(' ').map(capitalize).join(' ');
-// caps;
-/* 
-  DO NOT EDIT BELOW THIS LINE
+  /*DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var name = "daniel";
 
