@@ -6,9 +6,33 @@
   - Do not edit any of the existing code
 */
 
-var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
+var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops", ["Peter", "John"]];
 
-var pairsByIndex; // Complete this statement
+function isArray(rawElement) {
+    return rawElement instanceof Array;
+}
+
+function hasTwoElements(rawElement) {
+    return rawElement.length === 2;
+}
+
+function isNumber(element) {
+    return !isNaN(element);
+}
+
+function allElementsAreNumbers(rawElement) {
+    return rawElement.every(isNumber);
+}
+
+function isPair(rawElement) {
+    return isArray(rawElement) && hasTwoElements(rawElement) && allElementsAreNumbers(rawElement);
+}
+
+function isPair(rawElement) {
+    return rawElement instanceof Array && rawElement.length === 2 && rawElement.every(element => !isNaN(element));
+}
+
+var pairsByIndex = pairsByIndexRaw.filter(isPair); // [[0, 3], [1, 2], [2, 1]]
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
