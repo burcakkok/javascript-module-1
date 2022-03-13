@@ -11,7 +11,6 @@ function isStudent(person) {
     return students.includes(person);
 }
 
-
 if (groupIsOnlyStudents) {
   console.log("The group contains only students");
 } else {
